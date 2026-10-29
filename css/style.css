@@ -1,0 +1,2063 @@
+*{
+    box-sizing: border-box;
+     margin:0;
+    padding:0;
+}
+body{
+    background-color: #F9FAFB;
+    height: 100%;
+    margin:0;
+}
+img{
+   max-width:100%;
+    height: auto;
+    display: block;
+}
+#dashboard-layout .container{
+   display:flex;
+   gap:20px;
+height:100%;
+margin:0;
+position: relative;
+}
+/*start sidebar*/
+ #dashboard-layout .sidebar{
+width:20%;
+background-color: #FFFFFF;
+min-height: 100vh;
+height: 100%;
+padding:20px 15px;
+position:sticky;
+top:0;
+flex-shrink:0;
+}
+.logo{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap:20px;
+margin-block: 20px;
+}
+ .logo i{
+font-size:20px;
+color:white;
+background-color: #3E3AE0;
+border:20px solid #3E3AE0;
+border-radius: 20px;
+padding:10px 10px;
+box-shadow: 2px 2px 0 #a4a3e9b0;
+display:flex;
+align-items: center;
+justify-content: center;
+width:24px;
+height:24px;
+}
+.logo h1{
+font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size:36px;
+font-weight: 700;
+line-height:40px ;
+}
+.logo h3{
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size:14px;
+font-weight: 600;
+line-height:20px ;
+color: oklch(0.446 0.03 256.802);
+}
+.main-title{
+margin-block:20px;
+padding:10px 10px;
+background-color: #EFF6FF;
+border :10px solid #EFF6FF;
+border-radius: 15px;
+}
+.main-page .fa-solid.fa-house{
+    color:#155DFC;
+    font-size:20px;
+    background-color: #EFF6FF;   
+}
+.main-page h2 a{
+text-decoration: none;
+font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size:20px;
+font-weight: 600;
+line-height:24px ;
+color: oklch(0.488 0.243 264.376);
+}
+.main-page ul i{
+color:#6A7282;
+}
+.main-page ul .main-content{
+ list-style: none;
+font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size:18px;
+font-weight: 600;
+line-height:24px ;
+margin-block: 30px;
+padding-right: 20px;
+}
+.main-page ul .main-content a{
+    text-decoration: none;
+    color: oklch(0.446 0.03 256.802);
+}
+.main-page .main-content:hover{
+background-color: #F9FAFB;
+border: 2px solid #F9FAFB;
+border-radius: 20px;
+padding:15px;
+margin:10px;
+}
+.main-page h4{
+font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size:16px;
+font-weight: 600;
+line-height:20px ;
+color: oklch(0.373 0.034 259.733);
+margin-top:30px;
+margin-bottom: 20px;
+}
+.main-page ul .fast{
+font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size:14px;
+font-weight: 500;
+line-height:21px ;
+}
+.main-page ul .fast1{
+    list-style: none;
+margin-block:10px;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+gap:20px;
+}
+.main-page ul .fast1 a{
+    text-decoration: none;
+color:rgb(17, 24, 39); 
+
+}
+.main-page .fast1:hover{
+    background-color: #FAFAFA;
+    border: 2px solid #FAFAFA ;
+border-radius: 10px;
+padding:10px;
+margin:5px;
+}
+.main-page .fast1 i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-page .fast1 .fa-solid.fa-paper-plane{
+    color: #155DFC;
+    background-color: #DBE8FC;
+border:20px solid #DBE8FC;
+border-radius: 15px;
+}
+.main-page .fast .fa-solid.fa-plus{
+color:#00A63E;
+background-color:#D4F3E1 ;
+border:20px solid #D4F3E1;
+border-radius: 15px;
+}
+.main-page .fast .fa-solid.fa-receipt{
+color:#9810FA;
+background-color:#EFE0FC ;
+border:20px solid #EFE0FC;
+border-radius: 15px;
+}
+.main-page .fast .fa-solid.fa-chart-line{
+color:#F54900;
+background-color: #FBE4D4;
+border:20px solid #FBE4D4;
+border-radius: 15px;
+}
+/*End sidebar*/
+/*Start Main-content-area*/
+ #dashboard-layout .main-content-area{
+    width:75%;
+    margin-top: 20px;
+ }
+ #dashboard-layout .main-content-area .parent {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+.div1 {
+grid-column: span 3 ;
+border:10px solid #FEFEFF;
+border-radius: 20px;
+height: fit-content;
+background-color: #FDFEFF;
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding-inline: 20px;
+}
+.div1 .head{
+display: flex;    
+}
+.div1 .head i{
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+gap:20px;
+margin-block: 20px;
+}
+ .div1 .fa-solid.fa-coins{
+font-size:20px;
+color:white;
+width:24px;
+height: 24px;
+background-color: #3E3AE0;
+border:20px solid #3E3AE0;
+border-radius: 20px;
+padding:10px 10px;
+box-shadow: 2px 2px 0 #a4a3e9b0;
+display:flex;
+justify-content: center;
+align-items: center;
+ }
+.div1 .title{
+       display:flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: flex-start;
+       margin-top:20px;
+       margin-right: 30px;;
+}
+ .div1 .title h1{
+font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size:36px;
+font-weight: 700;
+line-height:40px ;
+}
+.div1 .title h3{
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size:14px;
+font-weight: 600;
+line-height:20px ;
+color: oklch(0.446 0.03 256.802);
+}
+.div1 .head span{
+color:oklch(0.527 0.154 150.069);
+font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+margin:20px 40px;
+ display:flex;
+ justify-content: center;
+align-items: center;
+    gap:8px;
+    background-color: #F0FDF4;
+    border:5px solid #F0FDF4;
+    border-radius:10px;
+    width:fit-content;
+    height:fit-content;
+}
+.div1 .head span i{
+    font-size: 6px;
+}
+    .div1 .info{
+display:flex;
+gap:10px;
+    }
+    .div1 .info i{
+        color:#364153;
+        background-color:#f9fafb;
+        border: 10px solid #f9fafb;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:10px;
+        font-size: 18px;
+        height: fit-content;
+        width: fit-content;
+    }
+      .div1 .info i:hover{
+background-color: #F3F4F6;
+border:10px solid #F3F4F6;
+    }
+    .div1 .info{
+        position: relative;
+    }
+    .div1 .info .two{
+height:fit-content;
+width:fit-content;
+        color: white;
+        background-color: #FB2C36;
+        border-radius: 50%;
+        padding:2px 6px;
+position:absolute;
+right:40px;
+font-size:12px;
+    }
+    .div1 .name{
+        display: flex;
+        flex-direction: column;
+    }
+    .div1 .name .osama{
+        font-family: "IBM Plex Sans Arabic", sans-serif;
+        font-size:14px;
+        font-weight:600 ;
+        line-height:20px ;
+    }
+    .div1 .name .feature{
+        color: oklch(0.551 0.027 264.364);
+        font-family: "IBM Plex Sans Arabic", sans-serif;
+        font-size:12px;
+        font-weight:600 ;
+        line-height:16px ;
+    }
+    .div1 .border{
+        display: flex;
+        flex-direction: row;
+        gap:5px;
+        background-color: #FFFFFF;
+        border:1px solid #E5E7EB;
+        border-radius: 10px;
+        padding:10px;
+        box-shadow:2px 2px 0 #E5E7EB;
+    }
+.div1 img{
+width:40px;
+border-radius: 10px;
+}
+.div2 {
+    grid-row-start: 2;
+    background-color: #FFFFFF;
+    border:2px solid #E5E7EB;
+border-radius: 10px;
+    margin-top:30px;
+padding:30px 30px;
+}
+.div3 {
+    grid-row-start: 2;
+    background-color: #FFFFFF;
+     border:2px solid #E5E7EB;
+border-radius: 10px;
+        margin-top:30px;
+padding:30px 30px;
+}
+.div4 {
+    grid-row-start: 2;
+    background-color: #FFFFFF;
+     border:2px solid #E5E7EB;
+border-radius: 10px;
+        margin-top:30px;
+padding:30px 30px;
+}
+.div2 h3,
+.div3 h3,
+.div4 h3 {
+    color:oklch(0.551 0.027 264.364);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:14px ;
+    font-weight:600 ;
+    line-height: 20px; 
+}
+.div2 p,
+.div3 p,
+.div4 p {
+    color:oklch(0.21 0.034 264.665);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:36px ;
+    font-weight:700 ;
+    line-height: 40px;
+    margin-block:10px;
+}
+.div2 span,
+.div3 span,
+.div4 span {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:14px ;
+    font-weight:600 ;
+    line-height: 20px;
+}
+.div2 .arrow-up,
+.div3 .arrow-up
+{
+    color:oklch(0.627 0.194 149.214);
+}
+.div4 .arrow-down{
+    color:oklch(0.577 0.245 27.325);
+}
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    background-color: #FFFFFF;
+    border:2px solid #E5E7EB;
+    border-radius: 20px;
+    padding:20px 20px;
+    margin-top:30px;
+}
+.div5 table{
+    width:100%;
+}
+.div5 .head{
+    display:flex;
+    justify-content: space-between;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.div5 h2{
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:18px ;
+    font-weight:600 ;
+    line-height: 28px;
+}
+.div5 a{
+     font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:14px ;
+    font-weight:500 ;
+    line-height: 20px;
+    color:oklch(0.551 0.027 264.364);
+    text-decoration: none;
+}
+.div5 th{
+    color: oklch(0.373 0.034 259.733);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:14px ;
+    font-weight:600 ;
+    line-height: 20px;
+}
+
+.div5 tbody tr{
+    position: relative;
+}
+.div5 tbody td::before{
+content: "";
+position: absolute;
+bottom:0;
+left:0;
+top:2px;
+width:100%;
+height:1px;
+ background-color: #E5E7EB;
+}
+.div5 img{
+    width:40px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.div5 h3,
+.div5 span{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    right:10px;
+    bottom:30px;
+}
+.div5 h3{
+    color: oklch(0.21 0.034 264.665);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:14px ;
+    font-weight:600 ;
+    line-height: 20px;
+}
+.div5 span{
+  color: oklch(0.551 0.027 264.364);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:12px ;
+    font-weight:600 ;
+    line-height: 16px;  
+}
+.div5 .category{
+    display:inline-block;
+    color:#267F4F;
+    background-color: #DBFCE7;
+    border:2px solid  #DBFCE7;
+    border-radius: 20px;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:12px ;
+    font-weight:500 ;
+    line-height: 16px;
+    margin-top:30px;
+    padding:10px;
+    margin-right:20px;
+}
+.div5 .complete{
+    color:oklch(0.448 0.119 151.328);
+    background-color: #DBFCE7;
+    border-radius: 20px;
+        display:inline-block;
+ font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:12px ;
+    font-weight:500 ;
+    line-height: 16px;
+     margin-top:30px;
+    padding:10px;
+}
+.div5 .wait{
+    color:oklch(0.476 0.114 61.907);
+    background-color:#FEF9C2;
+    border-radius: 20px;
+        display:inline-block;
+ font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:12px ;
+    font-weight:500 ;
+    line-height: 16px;
+     margin-top:30px;
+    padding:10px;
+}
+.div5 .date{
+    color:oklch(0.446 0.03 256.802);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 14px;
+    font-weight:600 ;
+    line-height: 20px;
+}
+.div5 .price-green{
+    color:oklch(0.627 0.194 149.214);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size :14px;
+    font-weight:600 ;
+    line-height: 20px;
+}
+.div5 .price{
+    color:oklch(0.21 0.034 264.665);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 14px;
+    font-weight:600 ;
+    line-height: 20px;
+    margin-right:20px;
+}
+.div5 .meat .fa-solid.fa-utensils{
+    color:#F54900;
+    background-color:#FFEDD4 ;
+    border:10px solid #FFEDD4;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:3px;
+}
+.div5 .food{
+    color:oklch(0.47 0.157 37.304);
+background-color: #FFEDD4;
+    border-radius: 20px;
+        display:inline-block;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 12px;
+    font-weight:500 ;
+    line-height: 16px;
+    padding:10px;
+    margin-top:10px;
+    margin-right:20px;
+}
+.div5 .fa-solid.fa-cart-shopping{
+    color:#155DFC;
+    background-color: #DBEAFE;
+    border:10px solid #DBEAFE;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    margin-top:10px;
+}
+.div5 .cart-shopping{
+color:#193CB8;
+background-color:#DBEAFE;
+border-radius: 20px;
+display:inline-block;
+ padding:10px;
+ font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 12px;
+    font-weight:500 ;
+    line-height: 16px;
+        margin-top:10px;
+            margin-right:20px;
+}
+.div5 .reciet{
+color:#6E11B0;
+background-color:#F3E8FF;
+border-radius: 20px;
+display:inline-block;
+ padding:10px;
+ font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 12px;
+    font-weight:500 ;
+    line-height: 16px;
+        margin-top:10px;
+            margin-right:20px;
+}
+.div5 .work{
+    color:#016630;
+background-color:#DBFCE7;
+border-radius: 20px;
+display:inline-block;
+ padding:10px;
+ font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 12px;
+    font-weight:500 ;
+    line-height: 16px;
+        margin-top:10px;
+            margin-right:20px;
+}
+.div5 .fa-solid.fa-gas-pump{
+    color:#E7000B;
+    background-color:#FFE2E2 ;
+    border:10px solid #FFE2E2;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+        margin-top:10px;
+}
+.div5 .car{
+     color:#9F0712;
+background-color:#FFE2E2;
+border-radius: 20px;
+display:inline-block;
+ padding:10px;
+ font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 12px;
+    font-weight:500 ;
+    line-height: 16px;
+        margin-top:10px;
+            margin-right:20px;
+}
+.div5 .fa-solid.fa-film{
+     color:#4F39F6;
+    background-color: #E0E7FF;
+    border:10px solid #E0E7FF;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+        margin-top:10px;
+}
+.div5 .entertainment{
+      color:#372AAC;
+background-color:#E0E7FF;
+border-radius: 20px;
+display:inline-block;
+ padding:10px;
+ font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 12px;
+    font-weight:500 ;
+    line-height: 16px;
+        margin-top:10px;
+            margin-right:20px;
+}
+.div5 .fa-solid.fa-dumbbell{
+     color:#0092B8;
+    background-color: #CEFAFE;
+    border:10px solid #CEFAFE;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+        margin-top:10px;
+}
+.div5 .health{
+      color:#005F78;
+background-color:#CEFAFE;
+border-radius: 20px;
+display:inline-block;
+ padding:10px;
+ font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 12px;
+    font-weight:500 ;
+    line-height: 16px; 
+        margin-top:10px;
+            margin-right:20px;
+
+}
+.div5 .fa-solid.fa-graduation-cap{
+    color:#009966;
+    background-color:#D0FAE5 ;
+    border:10px solid #D0FAE5;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+        margin-top:10px;
+}
+.div5 .book{
+     color:#006045;
+background-color:#D0FAE5;
+border-radius: 20px;
+display:inline-block;
+ padding:10px;
+ font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 12px;
+    font-weight:500 ;
+    line-height: 16px; 
+    margin-top:10px;
+        margin-right:20px;
+}
+.div6{
+    grid-column-start: 3;
+    grid-row-start: 3;
+    background-color:#FFFFFF ;
+    border:2px solid #E5E7EB;
+    border-radius: 20px;
+    margin-top:30px;
+    padding:20px 20px;
+    height: fit-content;
+}
+.div6 h2{
+color: oklch(0.21 0.034 264.665);
+font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size:18px ;
+font-weight: 600;
+line-height:28px ;
+margin-bottom:10px;
+}
+.div6 .acount{
+    background-color:#EFF6FF ;
+    border:5px solid #EFF6FF;
+    border-radius:20px ;
+    padding:20px 20px ;
+    border-left: 5px solid #155DFC;
+    position: relative;
+}
+.div6 .acount i{
+    color: #155DFC;
+    background-color: #DBEAFE;
+    border:15px solid #DBEAFE;
+    border-radius: 50%;
+    font-size:18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:24px;
+    height:24px;
+}
+.div6 .acount span{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: oklch(0.546 0.245 262.881);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+position: relative;
+bottom:50px;
+}
+.div6 .acount h3{
+    color:oklch(0.21 0.034 264.665);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:18px;
+    font-weight: 700;
+    line-height: 20px;
+    position: absolute;
+    left:60px;
+    top:20px;
+}
+.div6 .acount h4{
+    color:oklch(0.446 0.03 256.802);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:12px;
+    font-weight: 600;
+    line-height: 20px;
+    position: absolute;
+    right:60px;
+    bottom:40px;
+}
+.div6 .acount h5{
+    color:oklch(0.551 0.027 264.364);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:12px;
+    font-weight: 600;
+    line-height: 16px;
+    position: relative;
+    right:30px;
+    top:5px;
+}
+.div6 .credit{
+    background-color:#EFF6FF ;
+    border:5px solid #EFF6FF;
+    border-radius:20px ;
+    padding:20px 20px ;
+    border-left: 5px solid #00A63E;
+    position: relative;
+    margin-top:15px;
+}
+.div6 .credit i{
+    color:#08A944;
+    background-color: #DBFCE7;
+    border:15px solid #DBFCE7;
+    border-radius: 50%;
+    font-size:18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:24px;
+    height: 24px;
+}
+.div6 .credit span{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color:#08A944;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+position: relative;
+bottom:50px;
+}
+.div6 .credit h3{
+    color:oklch(0.21 0.034 264.665);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:18px;
+    font-weight: 700;
+    line-height: 20px;
+    position: absolute;
+    left:90px;
+    top:20px;
+}
+.div6 .credit h4{
+    color:oklch(0.446 0.03 256.802);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:12px;
+    font-weight: 600;
+    line-height: 20px;
+    position: absolute;
+    right:60px;
+    bottom:40px;
+}
+.div6 .credit h5{
+    color:oklch(0.551 0.027 264.364);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:12px;
+    font-weight: 600;
+    line-height: 16px;
+    position: relative;
+    right:30px;
+    top:5px;
+}
+.div6::after {
+    content: "";
+    display:block;
+    width:100%;
+    height:1px;
+    background-color: #E5E7EB;
+    margin :8px 0;
+}
+.div6 a{
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:14px ;
+    font-weight:500 ;
+    line-height: 20px;
+    color:oklch(0.488 0.243 264.376);
+    text-decoration: none;
+    position: relative;
+    top:30px;
+    right:60px;
+}
+.div7{
+    background-color: #FFFFFF;
+   border:#E1E2E3 2px solid;
+   border-radius: 20px;
+   height: fit-content;
+   position: relative;
+   padding:20px 20px;
+}
+.div7 h2{
+    color:oklch(0.21 0.034 264.665);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:18px;
+    font-weight:600 ;
+line-height:28px ;
+}
+.div7 span.all{
+position: absolute;
+left:30px;
+top:20px;
+color:oklch(0.21 0.034 264.665);
+font-family: "IBM Plex Sans Arabic", sans-serif;
+ font-size:14px;
+    font-weight:500 ;
+line-height:20px ;
+}
+.div7 h3{
+    text-align: center;
+    color:black;
+font-family: "IBM Plex Sans Arabic", sans-serif;
+ font-size:30px;
+    font-weight:700 ;
+line-height:36px ;
+}
+.div7 h4{
+    text-align: center;
+    color:oklch(0.551 0.027 264.364);
+font-family: "IBM Plex Sans Arabic", sans-serif;
+ font-size:14px;
+    font-weight:600 ;
+line-height:20px ;
+}
+.div7 .part1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.div7 .part2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:20px;
+}
+.div7 .internet{
+    background-color: #F9FAFB;
+    border:5px solid #F9FAFB;
+border-radius: 20px;
+text-align: center;
+padding:20px 20px;
+}
+.div7 .internet i{
+    color: #155DFC;
+    background-color: #DBEAFE;
+    border: 5px solid #DBEAFE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding:3px 5px;
+    width:45px;
+    height: 45px;
+   margin-bottom: 8px;
+   margin-right: 10px;
+}
+.div7 .internet span{
+    color: oklch(0.551 0.027 264.364);
+    font-size:12px;
+    font-weight:600 ;
+    line-height:16px ;
+}
+.div7 .internet h5{
+    color:black;
+    font-size:16px;
+    font-weight:600 ;
+    line-height:24px ;
+    margin-block:5px;
+}
+.div7 .internet h6{
+    color:oklch(0.637 0.237 25.331);
+    font-size:12px;
+    font-weight:600 ;
+    line-height:16px ;
+}
+.div7 .electric{
+    background-color: #F9FAFB;
+    border:5px solid #F9FAFB;
+border-radius: 20px;
+text-align: center;
+padding:20px 20px;
+}
+.div7 .electric i{
+    color:#D08700;
+    background-color:#FEF9C2;
+    border: 5px solid #FEF9C2;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       padding:3px 5px;
+        width:45px;
+    height: 45px;
+   margin-bottom: 8px;
+   margin-right: 10px;
+}
+.div7 .elecrtic span{
+    color: oklch(0.551 0.027 264.364);
+    font-size:12px;
+    font-weight:600 ;
+    line-height:16px ;
+}
+.div7 .electric h5{
+    color:black;
+    font-size:16px;
+    font-weight:600 ;
+    line-height:24px ;
+    margin-block:5px;
+}
+.div7 .electric h6{
+    color:oklch(0.705 0.213 47.604);
+    font-size:12px;
+    font-weight:600 ;
+    line-height:16px ;
+}
+.div7 .phone{
+    background-color: #F9FAFB;
+    border:5px solid #F9FAFB;
+border-radius: 20px;
+text-align: center;
+padding:20px 20px;
+}
+.div7 .phone i{
+    color: #00A63E;
+    background-color:#DBFCE7;
+    border: 5px solid #DBFCE7;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       padding:3px 5px;
+        width:45px;
+    height: 45px;
+   margin-bottom: 8px;
+   margin-right: 10px;
+}
+.div7 .phone span{
+    color: oklch(0.551 0.027 264.364);
+    font-size:12px;
+    font-weight:600 ;
+    line-height:16px ;
+}
+.div7 .phone h5{
+    color:black;
+    font-size:16px;
+    font-weight:600 ;
+    line-height:24px ;
+    margin-block: 5px;
+}
+.div7 .phone h6{
+    color:oklch(0.723 0.219 149.579);
+    font-size:12px;
+    font-weight:600 ;
+    line-height:16px ;
+}
+.div7 .netflix{
+    background-color: #F9FAFB;
+    border:5px solid #F9FAFB;
+border-radius: 20px;
+text-align: center;
+padding:20px 20px;
+}
+.div7 .netflix i{
+    color: #E7000B;
+    background-color: #FFE2E2;
+    border: 5px solid #FFE2E2;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       padding:3px 5px;
+        width:45px;
+    height: 45px;
+   margin-bottom: 8px;
+   margin-right: 10px;
+}
+.div7 .netflix span{
+    color: oklch(0.551 0.027 264.364);
+    font-size:12px;
+    font-weight:600 ;
+    line-height:16px ;
+}
+.div7 .netflix h5{
+    color:black;
+    font-size:16px;
+    font-weight:600 ;
+    line-height:24px ;
+        margin-block: 5px;
+}
+.div7 .netflix h6{
+    color:oklch(0.551 0.027 264.364);
+    font-size:12px;
+    font-weight:600 ;
+    line-height:16px ;
+}
+.div8 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 5;
+    background-color: #FFFFFF;
+    border:2px solid #E5E7EB;
+    border-radius:20px ;
+    margin-top:20px;
+    padding:20px 20px;
+    height:fit-content;
+}
+.div8 .title{
+    display: flex;
+    justify-content: space-between;
+}
+.div8 h2{
+color:oklch(0.21 0.034 264.665);
+font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size: 18px;
+font-weight:600 ;
+line-height: 28px;
+}
+.div8 a{
+    text-decoration: none;
+    color:oklch(0.551 0.027 264.364);
+font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size: 14px;
+font-weight:500 ;
+line-height: 20px;
+}
+.div8 a:hover{
+    color:oklch(0.21 0.034 264.665);
+}
+.div8 .total{
+    background-color:#EEF2FF ;
+    border:1px solid #DBEAFE;
+    border-radius:20px ;
+    margin-block:20px;
+    padding:20px ;
+}
+.div8 .total h3{
+    color:#385DFC;
+font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size: 14px;
+font-weight:500 ;
+line-height: 20px;
+}
+.div8 .total h4{
+    color:oklch(0.379 0.146 265.522);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size: 24px;
+font-weight:700 ;
+line-height: 32px;
+}
+.div8 .total .residual{
+    display:flex;
+    flex-direction: column;
+align-items: flex-end;
+}
+.div8 .total span{
+    color: oklch(0.551 0.027 264.364);
+      font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size: 14px;
+font-weight:600 ;
+line-height: 20px;
+}
+.div8 .total h6{
+    color:oklch(0.627 0.194 149.214);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size: 18px;
+font-weight:600 ;
+line-height: 28px;
+}
+.div8 .total .user{
+    display: flex;
+    justify-content: space-between;
+}
+.div8 .total .progress-bar{
+    width:100%;
+    height: 8px;
+    background-color: #E5E7EB;
+    border-radius: 10px;
+    position: relative;
+    overflow:hidden;
+}
+.div8 .total .progress-bar::after{
+    content:"";
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    background-color: #5D63FF;
+    border-radius: 10px;
+    width: var(--percent,0%);
+}
+.div8 .entertainment,
+.div8 .invoices,
+.div8 .personal-care,
+.div8 .household-supplies
+ {
+background-color:#F9FAFB ;
+border:1px solid #D5D8DE;
+border-radius: 20px;
+margin-block: 20px;
+padding:20px;
+transition: all 1s ease-in-out;
+}
+.div8 .entertainment:hover,
+.div8 .invoices:hover,
+.div8 .personal-care:hover,
+.div8 .household-supplies:hover
+{
+    transform: scale(1.1);
+    background-color: #F5F6F8;
+    box-shadow:5px 5px 0 #F5F6F8 ;
+}
+.div8 .entertainment i{
+    color:#F54900;
+    background-color:#FFEDD4 ;
+    border:15px solid #FFEDD4;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div8 .invoices i{
+    color:#E7000B;
+    background-color:#FEE2E2 ;
+    border:15px solid #FEE2E2;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div8 .personal-care i{
+    color:#E60076;
+    background-color:#FCE7F3;
+    border:15px solid #FCE7F3;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div8 .household-supplies i{
+    color:#00A63E;
+    background-color:#DCFCE7 ;
+    border:15px solid #DCFCE7;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div8 .entertainment .price,
+.div8 .invoices .price,
+.div8 .personal-care .price,
+.div8 .household-supplies .price
+{
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+.div8 .entertainment h5,
+.div8 .invoices h5,
+.div8 .personal-care h5,
+.div8 .household-supplies h5
+{
+    color: oklch(0.21 0.034 264.665);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:16px;
+    font-weight:600 ;
+    line-height: 24px;
+}
+.div8 .entertainment span
+{
+     color: rgb(22, 101, 52);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:12px;
+    font-weight:500 ;
+    line-height: 16px;
+    background-color:#DCFCE7;
+    border: #DCFCE7 2px solid;
+    border-radius: 10px;
+}
+.div8 .invoices span{
+
+     color:rgb(153, 27, 27) ;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:12px;
+    font-weight:500 ;
+    line-height: 16px;
+    background-color:#FEE2E2;
+    border:#FEE2E2 2px solid;
+    border-radius: 10px;
+}
+.div8 .personal-care span{
+     color:rgb(146, 64, 14);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:12px;
+    font-weight:500 ;
+    line-height: 16px;
+    background-color:#FEF3C7;
+    border:#FEF3C7 2px solid;
+    border-radius: 10px;
+}
+.div8 .household-supplies span{
+     color: rgb(22, 101, 52);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size:12px;
+    font-weight:500 ;
+    line-height: 16px;
+    background-color:#DCFCE7;
+    border: #DCFCE7 2px solid;
+    border-radius: 10px;
+}
+.div8 .entertainment .info{
+    display: flex;    
+}
+.div8 .entertainment .info1{
+    display: flex;
+    flex-direction: column;
+}
+.div8 .entertainment h3{
+     color:oklch(0.21 0.034 264.665);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size: 16px;
+font-weight:600;
+line-height:24px;
+margin-right:10px;
+}
+.div8 .entertainment h4{
+    color: oklch(0.551 0.027 264.364);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size: 12px;
+font-weight:600 ;
+line-height: 16px;
+margin-right:10px;
+}
+.div8 .invoices .info{
+    display: flex;    
+}
+.div8 .invoices .info1{
+    display: flex;
+    flex-direction: column;
+}
+.div8 .invoices h3{
+     color:oklch(0.21 0.034 264.665);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size: 16px;
+font-weight:600;
+line-height:24px;
+margin-right:10px;
+}
+.div8 .invoices h4{
+    color: oklch(0.551 0.027 264.364);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size: 12px;
+font-weight:600 ;
+line-height: 16px;
+margin-right:10px;
+}
+.div8 .personal-care .info{
+    display: flex;    
+}
+.div8 .personal-care .info1{
+    display: flex;
+    flex-direction: column;
+}
+.div8 .personal-care h3{
+     color:oklch(0.21 0.034 264.665);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size: 16px;
+font-weight:600;
+line-height:24px;
+margin-right:10px;
+}
+.div8 .personal-care h4{
+    color: oklch(0.551 0.027 264.364);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size: 12px;
+font-weight:600 ;
+line-height: 16px;
+margin-right:10px;
+}
+.div8 .household-supplies .info{
+    display: flex;    
+}
+.div8 .household-supplies .info1{
+    display: flex;
+    flex-direction: column;
+}
+.div8 .household-supplies h3{
+     color:oklch(0.21 0.034 264.665);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size: 16px;
+font-weight:600;
+line-height:24px;
+margin-right:10px;
+}
+.div8 .household-supplies h4{
+    color: oklch(0.551 0.027 264.364);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+font-size: 12px;
+font-weight:600 ;
+line-height: 16px;
+margin-right:10px;
+}
+.div8 .entertainment .progress-bar{
+    width:100%;
+    height: 8px;
+    background-color: #E5E7EB;
+    border-radius: 10px;
+    position: relative;
+    overflow:hidden;
+    margin-top:5px;
+}
+@keyframes fillprogress-bar{
+    from{
+        width:0%;
+    }
+    to{
+        width: var(--percent,0%);
+    }
+}
+.div8 .entertainment .progress-bar::after{
+    content:"";
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    background-color:#FF6900;
+    border-radius: 10px;
+    width: var(--percent,0%);
+    animation: fillprogress-bar 1.2s ease-out forwards;
+}
+.div8 .invoices .progress-bar{
+    width:100%;
+    height: 8px;
+    background-color: #E5E7EB;
+    border-radius: 10px;
+    position: relative;
+    overflow:hidden;
+    margin-top:5px;
+}
+@keyframes fillprogress-bar{
+    from{
+        width:0%;
+    }
+    to{
+            width: var(--percent,0%);
+    }
+}
+.div8 .invoices .progress-bar::after{
+    content:"";
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    background-color:#FB2C36;
+    border-radius: 10px;
+    width: var(--percent,0%);
+    animation: fillprogress-bar 1.2s ease-out forwards;
+}
+.div8 .personal-care .progress-bar{
+    width:100%;
+    height: 8px;
+    background-color: #E5E7EB;
+    border-radius: 10px;
+    position: relative;
+    overflow:hidden;
+    margin-top:5px;
+}
+@keyframes fillprogress-bar{
+    from{
+        width:0%;
+    }
+    to{
+            width: var(--percent,0%);
+    }
+}
+.div8 .personal-care .progress-bar::after{
+    content:"";
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    background-color:#F6339A;
+    border-radius: 10px;
+    width: var(--percent,0%);
+        animation: fillprogress-bar 1.2s ease-out forwards;
+}
+.div8 .household-supplies .progress-bar{
+    width:100%;
+    height: 8px;
+    background-color: #E5E7EB;
+    border-radius: 10px;
+    position: relative;
+    overflow:hidden;
+    margin-top:5px;
+}
+@keyframes fillprogress-bar{
+    from{
+        width:0%;
+    }
+    to{
+            width: var(--percent,0%);
+    }
+}
+.div8 .household-supplies .progress-bar::after{
+    content:"";
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    background-color:#00C950;
+    border-radius: 10px;
+    width: var(--percent,0%);
+        animation: fillprogress-bar 1.2s ease-out forwards;
+}
+.div9 {
+    grid-row-start: 5;
+    background-color: #FFFFFF;
+    border:#E5E7EB 2px solid;
+    border-radius: 20px;
+    margin-top:20px;
+    padding:20px;
+    height: fit-content;
+}
+.div9 .title{
+    display: flex;
+    justify-content: space-between;
+}
+.div9 h2{
+    color: oklch(0.21 0.034 264.665);
+font-family:"IBM Plex Sans Arabic", sans-serif ;
+font-size: 18px;
+font-weight:600 ;
+line-height:28px ;
+}
+.div9 a{
+    text-decoration: none;
+color: rgb(100, 116, 139);
+font-family:"IBM Plex Sans Arabic", sans-serif ;
+font-size: 14px;
+font-weight:500 ;
+line-height:20px ;
+}
+.div9 a:hover{
+    color:oklch(0.21 0.034 264.665);
+}
+.div9 .items span{
+    color:rgb(100, 116, 139);
+font-family:"IBM Plex Sans Arabic", sans-serif ;
+font-size: 12px;
+font-weight:600 ;
+line-height:18px ;
+}
+.div9 .items 
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    margin-block: 20px;
+}
+.div9 .items .item1,
+.div9 .items .item2
+{
+display: flex;
+gap:10px;
+}
+.div9 .items .income-box{
+    width:12px;
+    height: 12px;
+    border-radius: 2px;
+    background-color:#10B981;
+}
+.div9 .items .expense-box{
+    width:12px;
+    height: 12px;
+    border-radius: 2px;
+    background-color:#EF4444;
+}
+.div9 .chart-group{
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 200px;
+}
+.div9 .bar1-group,
+.div9 .bar2-group,
+.div9 .bar3-group,
+.div9 .bar4-group
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap:5px;
+    height: 100%;
+    position:relative;
+}
+.bar1-group .income,
+.bar2-group .income,
+.bar3-group .income,
+.bar4-group .income
+{
+    width:14px;
+    height: var(--height,0%);
+    background-color: #10B981;
+    border-radius: 4px 4px 0 0;
+}
+.bar1-group .expense,
+.bar2-group .expense,
+.bar3-group .expense,
+.bar4-group .expense{
+    width:14px;
+    height: var(--height,0%);
+    background-color: #EF4444;
+    border-radius: 4px 4px 0 0;
+}
+.div9 .chart-group .label{
+   color: rgb(100, 116, 139);
+   font-family:"IBM Plex Sans Arabic", sans-serif ;
+font-size: 12px;
+font-weight:600 ;
+line-height:18px ;
+position: relative;
+top:25px;
+}
+.div10 {
+    grid-column-start: 2;
+    grid-row-start: 6;
+    background-color:#FFFFFF;
+    border:#E5E7EB 2px solid;
+    border-radius: 10px;
+    padding:20px;
+    margin-bottom: 500px;
+}
+.div10 .account-summary{
+    display: flex;
+    justify-content: space-between;
+}
+.div10 .account-summary h2{
+font-family:"IBM Plex Sans Arabic", sans-serif;
+color:oklch(0.21 0.034 264.665) ;
+font-size: 18px;
+font-weight: 600;
+line-height: 28px;
+}
+    .div10 .account-summary i{
+        color:rgb(100, 116, 139) ;
+    }
+    .div10 .account-summary a{
+text-decoration: none;
+font-family:"IBM Plex Sans Arabic", sans-serif;
+color:rgb(100, 116, 139) ;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+    }
+  .div10 .account-summary a:hover{
+        color: oklch(0.21 0.034 264.665);
+    }
+    .div10 .current-account,
+    .div10 .saving-account,
+    .div10 .credit-card
+    {
+background-color:#F9FAFB ;
+border:1px solid #F3F4F6;
+border-radius:20px ;
+margin-block:20px;
+padding:10px;
+display:flex;
+gap:10px;
+    }
+    .div10 .current{
+        display: flex;
+        flex-direction: column;
+    }
+    .div10 .current-account i{
+        color:#155DFC;
+        background-color: #DBEAFE;
+        border:15px solid #DBEAFE;
+        border-radius:10px ;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div10 .saving-account i{
+        color:#00A63E;
+        background-color:#DBFCE7 ;
+        border:15px solid #DBFCE7;
+        border-radius:10px ;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div10 .credit-card i{
+        color:#9810FA;
+        background-color:#F3E8FF ;
+        border:15px solid #F3E8FF;
+        border-radius:10px ;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+.div10 .current-account h3,
+    .div10 .saving-account h3,
+    .div10 .credit-card h3
+    {
+font-family:"IBM Plex Sans Arabic", sans-serif;
+color:oklch(0.21 0.034 264.665) ;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+    }
+    .div10 .current-account h4,
+    .div10 .saving-account h4,
+    .div10 .credit-card h4
+    {
+font-family:"IBM Plex Sans Arabic", sans-serif;
+color:oklch(0.551 0.027 264.364);
+font-size: 12px;
+font-weight: 500;
+line-height: 16px;
+    }
+    .div10 .current-account span,
+    .div10 .saving-account span
+    {
+font-family:"IBM Plex Sans Arabic", sans-serif;
+color:oklch(0.21 0.034 264.665);
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+    }
+    .div10 .credit-card span{
+        font-family:"IBM Plex Sans Arabic", sans-serif;
+color:oklch(0.577 0.245 27.325);
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+    }
+.div11 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 5;
+    background-color: #FFFFFF;
+    border:2px solid #E1E2E3;
+    border-radius: 20px;
+    padding:20px;
+    margin-top:20px;
+    height: fit-content;
+}
+.div11 .payment-method{
+    display: flex;
+    justify-content: space-between;
+
+}
+.div11 .payment-method h2{
+    font-family:"IBM Plex Sans Arabic", sans-serif ;
+    color:oklch(0.21 0.034 264.665);
+    font-size:18px;
+    font-weight:600;
+    line-height: 28px;
+}
+.div11 .payment-method a{
+    text-decoration: none;
+    font-family:"IBM Plex Sans Arabic", sans-serif ;
+    color:oklch(0.446 0.03 256.802);
+    font-size:14px;
+    font-weight:500;
+    line-height: 20px;
+}
+.div11 .payment-method a:hover
+{
+    color:oklch(0.21 0.034 264.665);
+}
+.div11 .credit-1{
+    width:320px;
+    height:190px;
+    perspective: 1000px;
+   position: relative;
+   margin-top:20px;
+}
+.div11 .border{
+    width:40px;
+    height:30px;
+    background-color:lightcyan;
+    border-radius: 2px solid lightcyan ;
+    border-radius:5px;
+    overflow:auto;
+}
+.div11 .mini{
+    width:30px;
+    height:20px;
+    background-color:lightgray;
+    border-radius: 2px lightgray ;
+    border-radius:5px;
+    position: relative;
+    top:5px;
+    right:5px;
+}
+.div11 .visa{
+display:flex;
+justify-content: flex-end;
+position: relative;
+}
+.div11 .visa i{
+    font-size:36px;
+    color:white;
+    position: relative;
+    bottom:40px;
+}
+.div11 .visa span{
+    position: relative;
+    left:30px;
+    bottom:45px;
+    color:lightgray;
+    background-color: transparent;
+    border:2px solid transparent;
+    border-radius: 20px;
+    z-index:1;
+}
+.div11 .credit-1 .front-side, 
+.div11 .credit-1 .back-side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  transition: transform 0.8s ease-in-out;
+  box-sizing: border-box;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.div11 .credit-1 .front-side {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  transform: rotateY(0deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ .div11 .credit-1 .back-side {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.div11 .credit-1:hover .front-side {
+  transform: rotateY(-180deg);
+}
+ .div11 .credit-1:hover .back-side {
+  transform: rotateY(0deg);
+}
+.div11 .credit-1 .card-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.div11 .credit-1 .card-number {
+  font-size: 24px;
+  font-weight: 600;
+ position: relative;
+ bottom:20px;
+ right:50px;
+}
+.div11 .credit-1 .black-stripe {
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  margin-top: 10px;
+}
+.div11 .credit-2{
+    width:320px;
+    height:190px;
+    perspective: 1000px;
+   position: relative;
+   margin-top:20px;
+}
+.div11 .border{
+    width:40px;
+    height:30px;
+    background-color:lightcyan;
+    border-radius: 2px solid lightcyan ;
+    border-radius:5px;
+    overflow:auto;
+}
+.div11 .mini{
+    width:30px;
+    height:20px;
+    background-color:lightgray;
+    border-radius: 2px lightgray ;
+    border-radius:5px;
+    position: relative;
+    top:5px;
+    right:5px;
+}
+.div11 .master-card{
+display:flex;
+justify-content: flex-end;
+position: relative;
+}
+.div11 .master-card i{
+    font-size:36px;
+    color:white;
+    position: relative;
+    bottom:40px;
+}
+.div11 .credit-2 .front-side, 
+.div11 .credit-2 .back-side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  transition: transform 0.8s ease-in-out;
+  box-sizing: border-box;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.div11 .credit-2 .front-side {
+  background: linear-gradient(135deg, #be185d, #ec4899);
+  transform: rotateY(0deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ .div11 .credit-2 .back-side {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.div11 .credit-2:hover .front-side {
+  transform: rotateY(-180deg);
+}
+ .div11 .credit-2:hover .back-side {
+  transform: rotateY(0deg);
+}
+.div11 .credit-2 .card-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.div11 .credit-2 .card-number {
+  font-size: 24px;
+  font-weight: 600;
+ position: relative;
+ bottom:20px;
+ right:50px;
+}
+.div11 .credit-2 .black-stripe {
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  margin-top: 10px;
+}
+
+.div11 .credit-3 {
+  width: 320px;
+  height: 190px;
+  perspective: 1000px;
+  position: relative;
+  margin-top: 20px;
+}
+.div11 .credit-3 .front-side, 
+.div11 .credit-3 .back-side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  transition: transform 0.8s ease-in-out;
+  box-sizing: border-box;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.div11 .credit-3 .front-side {
+  background: linear-gradient(135deg, #0284c7, #38bdf8);
+  transform: rotateY(0deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.div11 .border{
+    width:40px;
+    height:30px;
+    background-color:lightcyan;
+    border-radius: 2px solid lightcyan ;
+    border-radius:5px;
+    overflow:auto;
+}
+.div11 .mini{
+    width:30px;
+    height:20px;
+    background-color:lightgray;
+    border-radius: 2px lightgray ;
+    border-radius:5px;
+    position: relative;
+    top:5px;
+    right:5px;
+}
+.div11 .paypal{
+display:flex;
+justify-content: flex-end;
+position: relative;
+}
+.div11 .paypal i{
+    font-size:36px;
+    color:white;
+    position: relative;
+    bottom:50px;
+}
+.credit-3 .card-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.credit-3 .back-side {
+  background: linear-gradient(135deg, #0369a1, #0284c7);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.credit-3 .black-stripe {
+  width: 100%;
+  height: 40px;
+  background-color: #0f172a;
+}
+
+.credit-3 .back-side p {
+  font-size: 11px;
+  color: #e2e8f0;
+  padding: 0 20px;
+  margin: 0;
+}
+.credit-3 .back-side span {
+  background-color: #ffffff;
+  color: #0f172a;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 13px;
+  width: fit-content;
+  margin-right: 20px;
+}
+.credit-3:hover .front-side {
+  transform: rotateY(-180deg);
+}
+.credit-3:hover .back-side {
+  transform: rotateY(0deg);
+}
+/*--End Main-content-area*/
+@media (max-width: 992px) {
+  #dashboard-layout,
+  #dashboard-layout .container {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  #dashboard-layout .sidebar {
+    width: 100% !important;
+    position: relative !important;
+    min-width: auto !important;
+    height:auto !important;
+  }
+  #dashboard-layout .main-content-area {
+    width: 100% !important;
+    margin-top: 10px !important;
+    padding: 0 10px !important;
+  }
+  #dashboard-layout .main-content-area .parent,
+  #dashboard-layout .chart-container,
+  #dashboard-layout .cards-grid {
+    grid-template-columns: 1fr !important; 
+        display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+  .credit-1, .credit-2, .credit-3, .card, .card-container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
